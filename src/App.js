@@ -1,7 +1,9 @@
 import "./App.css";
 import { name, age } from "./constants/constant";
+import User from "./component/User";
 function App() {
   console.log(name, age);
+  console.log(User);
   return (
     <div className="App">
       <header className="App-header">
