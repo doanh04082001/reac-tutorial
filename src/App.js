@@ -1,13 +1,11 @@
 import "./App.css";
-import { name, age } from "./constants/constant";
+import Product from "./component/Product";
 function App() {
-  console.log(name, age);
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>React demo</h1>
+        <Product />
       </header>
     </div>
   );
