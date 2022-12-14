@@ -1,13 +1,16 @@
-const Footer = () => {
+const Footer = (props) => {
+  const { totalPrice, deleteCarts } = props;
   return (
     <footer>
       <hr />
-      <div class="cart-total">
+      <div className="cart-total">
         <h4>
-          total <span>122</span>
+          total <span>{totalPrice}</span>
         </h4>
       </div>
-      <button class="btn clear-btn">clear cart</button>
+      <button onClick={() => deleteCarts()} className="btn clear-btn">
+        clear cart
+      </button>
     </footer>
   );
 };
