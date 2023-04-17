@@ -11,30 +11,32 @@
 // import ReduxApplication from "./redux";
 // import { Typography, Divider } from 'antd';
 import './App.css';
-import Filters from './component/Filters';
-import TodoList from './component/TodoList';
+// import Filters from './component/Filters';
+// import TodoList from './component/TodoList';
+import DemoModal from './component/demoModal';
 // Chart.register(ArcElement);
-
 const App = () => {
-  // Redux (redux code)
   return (
-    <div
-      style={{
-        width: 500,
-        margin: '0 auto',
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: 'white',
-        padding: 20,
-        boxShadow: '0 0 10px 4px #bfbfbf',
-        borderRadius: 5,
-        height: '90vh',
-      }}
-    >
-      <h1 className='text-center'> Todo App with Redux  </h1>
-      <Filters />
-      <TodoList />
-    </div>
+    <>
+      <div
+        style={{
+          width: 1000 ,
+          margin: '0 auto',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: 'white',
+          padding: 20,
+          boxShadow: '0 0 10px 4px #bfbfbf',
+          borderRadius: 5,
+          height: '90vh',
+        }}
+      >
+        <DemoModal/>
+        {/* <Filters />
+      <TodoList /> */}
+      </div>
+    </>
+
   );
   // End Redux (redux code)
 

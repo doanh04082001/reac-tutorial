@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import ModalContextProvide from './context/ModalContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     {/* import store bằng store vừa tạo */}
     <Provider store={store}>
       <React.StrictMode>
-        <App />
+        <ModalContextProvide>
+          <App />
+        </ModalContextProvide>
       </React.StrictMode>
     </Provider>
   </>
