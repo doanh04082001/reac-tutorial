@@ -1,17 +1,45 @@
 // import { useState } from "react";
-import "./App.css";
 // import CartList from "./component/CartList";
 // import CartNull from "./component/CartNull";
 // import Footer from "./component/Footer";
 // import NavBar from "./component/navbar";
-import PieChart from "./component/PieChart";
+// import PieChart from "./component/PieChart";
 // import cartList from "./data/carts";
 // import { Data } from "./utils/Data";
-import { Chart, ArcElement } from "chart.js";
-import Tab from "./component/Tab";
-import { useState } from "react";
-Chart.register(ArcElement);
+// import { Chart, ArcElement } from "chart.js";
+// import Tab from "./component/Tab";
+// import ReduxApplication from "./redux";
+// import { Typography, Divider } from 'antd';
+import './App.css';
+// import Filters from './component/Filters';
+// import TodoList from './component/TodoList';
+import DemoModal from './component/demoModal';
+// Chart.register(ArcElement);
 const App = () => {
+  return (
+    <>
+      <div
+        style={{
+          width: 1000 ,
+          margin: '0 auto',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: 'white',
+          padding: 20,
+          boxShadow: '0 0 10px 4px #bfbfbf',
+          borderRadius: 5,
+          height: '90vh',
+        }}
+      >
+        <DemoModal/>
+        {/* <Filters />
+      <TodoList /> */}
+      </div>
+    </>
+
+  );
+  // End Redux (redux code)
+
   // const [carts, setCart] = useState(cartList);
 
   // let totalAmount = 0;
@@ -94,7 +122,10 @@ const App = () => {
   //   );
   // }
 
-  return <Tab />;
+  // Tab and content of tab
+  // return <Tab />;
+
+
 };
 
 export default App;
